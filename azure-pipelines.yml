@@ -16,6 +16,8 @@
    repositories:
     - repository: optimusmukul/pipelines-javascript-docker
  steps:
+
+ - checkout: optimusmukul/pipelines-javascript-docker
  - task: Docker@2
    displayName: Build an image
    inputs:
