@@ -12,6 +12,9 @@
  variables:
    imageName: 'pipelines-javascript-docker'
 
+ resources:
+   repositories:
+    - repository: pipelines-javascript-docker
  steps:
  - task: Docker@2
    displayName: Build an image
